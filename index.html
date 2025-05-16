@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Окно</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer-modala">
+        <div class="modalnoe-okno">
+            <div class="zagolovok-modala">
+                <div class="nazvanie-modala">Добавить обновление</div>
+                <button class="zakr-knopka">×</button>
+            </div>
+            <div class="telo-modala">
+                    <div class="ryad-formy">
+                        <div class="gruppa-formy">
+                            <div class="gruppa-s-podpisyu">
+                                <label>Релиз/Версия:</label>
+                                <input type="text" class="pole-versii">
+                            </div>
+                        </div>
+                        <div class="gruppa-formy">
+                            <div class="gruppa-s-podpisyu">
+                                <label>Дата обновления:</label>
+                                <input type="date" class="pole-daty">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gruppa-formy">
+                        <div class="gruppa-s-podpisyu">
+                            <label class="podpis-v-dve-stroki">Наименование<br>релиза/версии:</label>
+                            <input type="text" class="pole-nazvaniya">
+                        </div>
+                    </div>
+                    <div class="gruppa-formy gruppa-obnovleniy">
+                        <label class="podpis-obnovleniy">Список обновлений:</label>
+                        <div id="updates-section" class="sekciya-obnovleniy">
+                            <div class="ryad-obnovleniya">
+                                <div class="nomer-obnovleniya">Обновление 1</div>
+                                <div class="obl-polya-vvoda">
+                                    <textarea></textarea>
+                                    <button class="knopka-udaleniya">×</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dobavit-obnovlenie" onclick="addUpdate()">+ Добавить обновление</div>
+                    </div>
+            </div>
+        </div>
+        <div class="knopka">
+            <div class="sohranit"></div>
+            <div class="tekst-sohranit">Сохранить</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
